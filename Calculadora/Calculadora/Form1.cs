@@ -173,13 +173,15 @@ namespace Calculadora
 
         private void button6_Click(object sender, EventArgs e)
         {
-            txtResultado.Text = txtResultado.Text.Remove(txtResultado.Text.Length - 1, 1); ;
+            //limpa label numerico
+            txtResultado.Text = txtResultado.Text.Remove(txtResultado.Text.Length - 1, 1);
+            // limpa label sinal aritimetico
             lblOperacao.Text = "";
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            txtResultado.Text = "";
+            txtResultado.Text = "";//limpa as variaveis
             valor1 = 0;
             valor2 = 0;
             lblOperacao.Text = "";
